@@ -378,3 +378,43 @@ header {
     top: 3300px;
     left: 550px;
 }
+
+
+/* Button section  */
+.button-container{
+    padding: 5rem 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.button-container button{
+    width: 15rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    color: #0B0223;
+}
+
+
+.button-container button:hover{
+    
+    border: 2px solid #FF42A5 ;
+    color: #FF42A5 ;
+}
+
+.button-box img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.button-title{
+
+}
