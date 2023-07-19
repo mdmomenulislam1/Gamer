@@ -11,7 +11,6 @@
     display: none;
 }
 
-
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -104,7 +103,6 @@ header {
     color: black;
 }
 
-
 /* Banner section  */
 .banner-container {
     display: flex;
@@ -114,8 +112,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 .banner-content li {
     list-style: none;
@@ -163,7 +159,6 @@ header {
     width: 100%;
     height: 30rem;
 }
-
 
 /* Intro section  */
 .intro-container {
@@ -219,7 +214,6 @@ header {
     font-weight: 700;
 }
 
-
 /* Videos section  */
 .video-container {}
 
@@ -265,9 +259,6 @@ header {
     height: 300px;
 }
 
-
-
-
 .video-card .image-container {
     position: relative;
     display: inline-block;
@@ -302,10 +293,6 @@ header {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
-
-
-
 
 .card-description {
     color: #534C64;
@@ -358,7 +345,6 @@ header {
     left: -100px;
     bottom: -100px;
 }
-
 
 .relative-img,
 .relative-img-2 {
@@ -417,9 +403,6 @@ header {
     bottom: -100px;
 }
 
-
-
-
 /* Career section  */
 .career-container {
     margin: 0;
@@ -471,7 +454,6 @@ header {
 
 .location {}
 
-
 .btn-career {
     border-radius: 48px;
     background: #FFF;
@@ -486,15 +468,11 @@ header {
     margin-bottom: 2rem;
 }
 
-
 .career-img {}
 
 .career-img img {
     width: 100%;
 }
-
-
-
 
 /* Button section  */
 .button-container {
@@ -572,7 +550,6 @@ footer a {
     font-weight: 600;
 }
 
-
 .footer-social-media {
     display: flex;
     justify-content: center;
@@ -604,13 +581,6 @@ footer a {
     font-weight: 500;
 }
 
-
-.hide {
-    display: none;
-}
-
-
-
 header,
 footer,
 .button-container,
@@ -622,11 +592,6 @@ footer,
     padding: 3rem 6rem;
 
 }
-
-
-
-
-
 
 
 /* Responsive style for small device */
@@ -643,12 +608,16 @@ footer,
     .instant-container-2,
     .instant-container,
     .video-container,
-    .intro-container,
+    
     .banner-container {
         padding: 10px;
         flex-direction: column;
     }
 
+    .intro-container{
+        padding: 0px;
+        flex-direction: column;
+    }
 
     footer,
     .button-container,
@@ -679,7 +648,7 @@ footer,
 
     .video-container {
 
-        margin-left: 6rem;
+        margin-left: 4rem;
     }
 
     .banner-img {
@@ -801,10 +770,25 @@ footer,
         font-size: 0.8rem;
     }
 
+    .banner-container {
+        background-image: none;
+    }
 
-    .banner-text {}
+    .banner-text {
+        
+        margin: auto;
+        width: 100%;
+    }
 
-    .banner-content {}
+    .banner-content {
+        width: 100%;
+        height: 300px;
+        background-image: url('images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: center;
+        padding-top: 4rem;
+    }
 
     .banner-content li {
         font-size: 0.8rem;
@@ -825,9 +809,6 @@ footer,
         margin: 0;
     }
 }
-
-
-
 
 
 /* Responsive style for medium device */
@@ -1056,30 +1037,3 @@ footer,
         padding: 3rem 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.img1{
-    position: relative;
-
-}
-.img2{
-    position: absolute;
-    top: 50px;
-} */
