@@ -1038,3 +1038,12 @@ footer,
         padding: 3rem 0;
     }
 }
+
+
+/* Bonus Responsive */
+@media screen and (min-width: 960px) and (max-width: 1240px) {
+    *, Body{
+
+        flex-wrap: wrap;
+    }
+}
