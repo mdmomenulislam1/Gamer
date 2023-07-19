@@ -105,12 +105,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-content {
-    background-image: url('images/Group\ 14.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    
 
 }
 
@@ -120,6 +121,7 @@ header {
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    width: 80;
 }
 
 .sub-title {
@@ -152,7 +154,7 @@ header {
 
 .banner-img {
     padding: 0;
-    width: 100%;
+    width: 50%;
 }
 
 .banner-img img {
@@ -345,16 +347,25 @@ header {
     line-height: 30px;
 }
 
-
-.instant-pics {
+.instant-pics{
     position: relative;
-
 }
 
-.absolute-img {
+.absolute-img{
     position: absolute;
-    top: 400px;
     left: -100px;
+    bottom: -100px;
+}
+
+
+.relative-img, .relative-img-2{
+    width: auto;
+    height: auto;
+}
+
+.absolute-img img, .absolute-img-2 img{
+    width: auto;
+    height: auto;
 }
 
 /* Play Instant section 2  */
@@ -392,16 +403,18 @@ header {
     line-height: 30px;
 }
 
-.instant-pics-2 {
+.instant-pics-2{
     position: relative;
-    padding: 1rem 2rem;
 }
 
-.absolute-img-2 {
+.absolute-img-2{
     position: absolute;
     right: -100px;
     bottom: -100px;
 }
+
+
+
 
 /* Career section  */
 .career-container {
@@ -602,7 +615,7 @@ footer,
 .video-container,
 .intro-container,
 .banner-container {
-    padding: 2rem 6rem;
+    padding: 3rem 6rem;
 
 }
 
@@ -612,7 +625,7 @@ footer,
 
 
 
-/* Responsive style  */
+/* Responsive style for small device */
 @media screen and (max-width: 576px) {
     body {
         padding: 0;
@@ -683,22 +696,264 @@ footer,
         height: 2rem;
     }
 
-    .instant-pics {
+    
+
+
+    .intro-content {
         text-align: center;
-
+    }
+    .intro-description {
+        padding: 0 ;
+        color: #534C64;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2rem;
     }
 
-    .instant-pics .relative-img {
-        width: 80%;
-       
+    .instant-content-2 {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
     }
 
-    .absolute-img {
-        top: 200px;
-        left: 0px;
+   
+    
+    .career-content {
+        padding: 0;
+        width: 100%;
     }
-    .absolute-img img{
-        width: 150px;
-        height: 180px;
+    
+    .career-title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    
+    .career-description {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    
+    .information {
+        display: flex;
+        color: #FFF;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+    .btn-career {
+        border-radius: 3rem;
+        font-size: 0.8rem;
+    }
+
+
+    .banner-text {
+        
+        padding-top: 2rem;
+        
+    }
+    
+    .banner-content li {
+        font-size: 0.8rem;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    .btn-banner-left, .btn-banner-right{
+        width: 7rem;
+        font-size: 0.8rem;
+        margin: 0;
+    }
 }
+
+
+
+
+
+/* Responsive style for medium device */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    body {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    header,
+    footer,
+    .button-container,
+    .career-container,
+    .instant-container-2,
+    .instant-container,
+    .video-container,
+    .intro-container,
+    .banner-container {
+        padding: 0px 0;
+        flex-direction: column;
+    }
+
+    .video-container{
+        text-align: center;
+    }
+
+
+    .nav-menu-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.1rem;
+    }
+
+    .banner-container,
+    .instant-container-2 {
+        flex-direction: column-reverse;
+    }
+
+    .button-container,
+    .footer-service-container,
+    .footer-social-media,
+    .footer-terms-condition {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .instant-content,
+    .instant-content-2 {
+        text-align: center;
+        width: 100%;
+        margin-right: 0rem;
+
+    }
+
+    .career-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .button-container button {
+        width: auto;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 3rem;
+        color: #0B0223;
+        font-size: 8px;
+    }
+
+    button img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    
+
+
+    .intro-content {
+        text-align: center;
+    }
+    .intro-description {
+        padding: 0 ;
+        color: #534C64;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .instant-content-2 {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .career-content {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .career-title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    
+    .career-description {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    
+    .information {
+        display: flex;
+        color: #FFF;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+    .btn-career {
+        border-radius: 3rem;
+        font-size: 0.8rem;
+    }
+
+
+    .banner-text {
+        
+        padding-top: 2rem;
+        
+    }
+    
+    .banner-content li {
+        font-size: 0.8rem;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    .btn-banner-left, .btn-banner-right{
+        width: 7rem;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    footer{
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.img1{
+    position: relative;
+
+}
+.img2{
+    position: absolute;
+    top: 50px;
+} */
